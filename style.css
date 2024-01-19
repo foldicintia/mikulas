@@ -100,3 +100,23 @@ footer{
     margin-top:10px ;
     padding: 10px;
 }
+
+@media screen and (max-width: 700px){
+    nav ul{
+       grid-template-columns: 1fr;
+   } 
+   aside{
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+   }
+   main{
+    
+       grid-template-areas: 
+       "h h"
+       "n n"
+       "as as"
+       "a a"
+       "f f"
+       ;
+   }
+}
